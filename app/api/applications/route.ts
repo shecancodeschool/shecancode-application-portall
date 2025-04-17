@@ -46,6 +46,7 @@ export async function POST(request: Request) {
 
     for (const field of requiredFields) {
       if (!body[field]) {
+        console.log(`Missing required field: ${field}`)
         return NextResponse.json({ message: `${field} is required` }, { status: 400 })
       }
     }
@@ -83,6 +84,7 @@ export async function POST(request: Request) {
         nationality: body.nationality,
         refugeeStatus: body.refugeeStatus,
         refugeeId: body.refugeeId,
+        nationalId: body.nationalId,
 
         hasDisability: body.hasDisability,
         disabilityType: body.hasDisability ? body.disabilityType : null,
