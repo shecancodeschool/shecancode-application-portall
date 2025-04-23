@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 214 59% 49%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 214 59% 49%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 214 59% 49%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 214 59% 49%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Status badge colors */
+.status-badge-under-review {
+  @apply bg-yellow-100 text-yellow-800 hover:bg-yellow-200;
+}
+.status-badge-technical-interview-scheduled {
+  @apply bg-blue-100 text-blue-800 hover:bg-blue-200;
+}
+.status-badge-technical-interviewed {
+  @apply bg-indigo-100 text-indigo-800 hover:bg-indigo-200;
+}
+.status-badge-common-interview-scheduled {
+  @apply bg-purple-100 text-purple-800 hover:bg-purple-200;
+}
+.status-badge-common-interviewed {
+  @apply bg-fuchsia-100 text-fuchsia-800 hover:bg-fuchsia-200;
+}
+.status-badge-accepted {
+  @apply bg-green-100 text-green-800 hover:bg-green-200;
+}
+.status-badge-rejected {
+  @apply bg-red-100 text-red-800 hover:bg-red-200;
+}
+.status-badge-waitlisted {
+  @apply bg-orange-100 text-orange-800 hover:bg-orange-200;
+}
+.status-badge-withdrawn {
+  @apply bg-gray-100 text-gray-800 hover:bg-gray-200;
+}
+.status-badge-needs-follow-up {
+  @apply bg-pink-100 text-pink-800 hover:bg-pink-200;
+}
