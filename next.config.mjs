@@ -48,4 +48,4 @@ if (userConfig) {
   }
 }
 
-export default nextConfig
+export default nextConfig;
