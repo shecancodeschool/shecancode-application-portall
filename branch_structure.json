@@ -1,0 +1,30 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "applicants-changes",
+    "fix/protect-routes",
+    "fix/status-filter-vs-bulk-action",
+    "fixe/prisma",
+    "ft-application-excel",
+    "main",
+    "origin"
+  ],
+  "parent": {
+    "applicants-changes": "main",
+    "fix/protect-routes": "main",
+    "fix/status-filter-vs-bulk-action": "main",
+    "fixe/prisma": "main",
+    "ft-application-excel": "main",
+    "main": null,
+    "origin": "main"
+  },
+  "order": [
+    "main",
+    "applicants-changes",
+    "fix/protect-routes",
+    "fix/status-filter-vs-bulk-action",
+    "fixe/prisma",
+    "ft-application-excel",
+    "origin"
+  ]
+}
