@@ -13,9 +13,6 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -48,4 +45,4 @@ if (userConfig) {
   }
 }
 
-export default nextConfig
+export default nextConfig;
