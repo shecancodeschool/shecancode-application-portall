@@ -38,8 +38,6 @@ yarn-error.log*
 next-env.d.ts
 config.bat
 
-.env
-.env.local
 .env.development.local
 .env.test.local
 
